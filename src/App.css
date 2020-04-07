@@ -1,0 +1,667 @@
+/* GENERAL */
+
+@import url('https://fonts.googleapis.com/css?family=Gothic+A1&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Gothic A1', sans-serif;
+}
+
+
+
+.classicPages {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 6.7rem;
+  font-family: 'Gothic A1', sans-serif;
+}
+
+.headTitle {
+  margin-top: 10rem;
+  margin-bottom: 4rem;
+  text-align: center;
+  font-family: 'mainFont';
+}
+
+button:focus {
+  border: none;
+  outline: none;
+}
+
+.mobileBlocks {
+  display: none;
+}
+
+.point:hover {
+  cursor: pointer;
+}
+
+/* NAVBAR */
+
+.fullMenu{
+  transition: height 0.3s linear;
+  height: 5rem
+}
+
+.smallMenu{
+  transition: height 0.3s linear;
+  height: 3rem;
+}
+
+.navBarSets  {
+  background-color: white;
+  border-bottom: 4px solid #43a62a70;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.navLinks {
+  margin-left: 2rem;
+  letter-spacing: 1px;
+  text-align: right;
+  font-family: "mainFont";
+  font-size: 25px;
+  text-shadow: -0.1px 0 rgb(41, 41, 41), 0 0.1px rgb(41, 41, 41), 0.1px 0 rgb(41, 41, 41), 0 -0.1px rgb(41, 41, 41);
+  color: inherit;
+}    
+
+.navLinks:hover {
+  text-decoration: none !important;
+  color: inherit;
+}    
+
+
+/* HOME */
+
+    /* CAROUSEL */
+.carou {
+  padding: 0;
+  position: relative;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+
+.carouText {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+  background-color: #000000ad;
+  letter-spacing: 2px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.top-right {
+  top: 4rem;
+  left: 4rem;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 2rem;
+  right: 4rem;
+  background-color: #000000ad;
+  width: 40%;
+  height: 10rem;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bottom-right:hover,  .top-right:hover{
+  cursor: pointer;
+}
+
+.slick-prev:before, .slick-next:before {
+  color: black !important;
+}
+
+    /* ICONS */
+
+.icons {
+    margin-top: 4rem;
+    text-align: center;
+    height: 11.6rem;
+    display: flex;
+}
+
+  /* PRESENTATION */
+
+
+.presentation {
+  display: flex;
+  grid-template-columns: 5fr 3fr;
+}
+
+.homeButtons {
+  /* background-color: blue; */
+  color: white;
+  display: flex;
+  margin: auto;
+  margin-bottom: 0;
+  flex-direction: column;
+}
+
+.btn-two {
+  color: 'blue';
+  transition: all 0.5s;
+  position: relative; 
+  /* background-color: blue; */
+}
+.btn-two span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;   
+
+}
+.btn-two::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+  /* border: 3px solid #0a71b4; */
+  /* background-color: #0a70b49d; */
+  border-radius: 10px;
+
+}
+.btn-two::after {
+  content: '';
+  color: white;
+  padding-top: 1.2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+  border: 3px solid #0a71b4;
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 10px;
+
+}
+.btn-two:hover::before {
+/* transform: rotate(-4deg); */
+}
+.btn-two:hover::after {
+transform: rotate(4deg);
+}
+
+.MyLightBox {
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+
+/* OFFERS MENU  */
+
+.offerBanner {
+  height: 270px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  color: white;
+  padding: 2rem;
+  letter-spacing: 5px;
+  text-shadow: -0.5px 0 white, 0 0.5px white, 0.5px 0 white, 0 -0.5px white;
+  font-family: 'mainFont';
+  transition: 1s;
+
+}
+
+.offerBannersBreak {
+  background-image: url("./medias/break.jpg");
+  /* background-size: 100%; */
+  background-position: 0px -170px;
+}
+
+.offerBannersBreak:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61)), url("./medias/break.jpg");
+  cursor: pointer;
+  background-position: 0px -50px;
+  height: 300px;
+  text-decoration: none;
+}
+
+.offerBannersSug {
+  background-image: url("./medias/sucree.jpg");
+  background-position: 0px -450px;
+  text-align: right;
+  transition: 1s;
+
+}
+
+.offerBannersSug:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61)), url("./medias/sucree.jpg");
+  cursor: pointer;
+  background-position: 0px -250px;
+  height: 300px;
+}
+
+.offerBannersSugSalt{
+  background-image: url("./medias/sucresale.jpg");
+  background-position: 0px -170px;
+  transition: 1s;
+}
+
+.offerBannersSugSalt:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61)), url("./medias/sucresale.jpg");
+  cursor: pointer;
+  background-position: 0px -50px;
+  height: 300px;
+  text-decoration: none;
+}
+
+.offerBannerRegular{
+  background-image: url("./medias/buffet3.jpg");
+  background-position: 0px -300px;
+  text-align: right;
+  transition: 1s;
+
+}
+
+.offerBannerRegular:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61)), url("./medias/buffet3.jpg");
+  cursor: pointer;
+  background-position: 0px -100px;
+  height: 300px;
+}
+
+
+/* SINGLE PAGES OFFER  */
+
+.singlePageSect {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  margin-top: 9rem;
+}
+
+.offerTitle {
+  text-align: center;
+  font-weight: bold;
+  /* font-family: 'mainFont'; */
+  /* text-shadow: -0.5px 0 rgba(0, 0, 0, 0.692), 0 0.5px rgba(0, 0, 0, 0.692), 0.5px 0 rgba(0, 0, 0, 0.692), 0 -0.5px rgba(0, 0, 0, 0.692) */
+}
+
+.regular {
+  display: grid;
+  grid-template-columns: 5fr 4fr;
+}
+/* A LA CARTE  */
+
+.twelve {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.stateBar {
+text-align: center;
+display: flex;
+justify-content: space-evenly;
+}
+
+
+.configGrid {
+  margin-top: 10rem;
+  display: grid;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  grid-template-columns: 5fr 2fr;
+}
+
+.quoteGrid {
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+}
+
+.productGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 4rem;
+}
+
+.menuGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 4rem;
+}
+
+.productsBlock {
+  width: 100%;
+}
+
+.cateBlock {
+  margin-top: 2rem;
+}
+
+.cardTempl {
+    width: 100%;
+    border: 0;
+    height: 23rem;
+}
+
+.productKindTitle {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-family: 'mainFont';
+}
+
+.cardContain {
+height: 14rem;
+border: 1px solid #0a71b4;
+border-radius: 10px;
+padding: 1rem;
+margin-bottom: 1rem;
+margin-left: 1rem;
+margin-right: 1rem;
+}
+
+.menuCard {
+  border: 1px solid #0a71b4;
+  border-radius: 10px;
+  margin: 0.5rem;
+  padding-top: 1rem;
+}
+
+
+
+
+.quantityDiv {
+  display: grid;
+  /* flex-wrap: wrap; */
+  grid-template-columns: 3fr 2fr;
+}
+
+.receivedOrder {
+  padding-top: 5rem;
+  text-align: center;
+}
+
+.nextPrev {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.prevNextBut {
+  width: 15rem;
+  height: 3rem;
+  color: white;
+  border-radius: 5px;
+  background-color: #0a71b4;
+}
+
+.quoteBlock {
+  margin-left: 1.8rem;
+}
+
+.quoteContainer {
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #0a70b42a;
+  width: 20rem;
+  min-height: 20rem;
+  max-height: 30rem;
+  overflow-y: scroll;
+  position: fixed;
+}
+
+/* ABOUT PAGE  */
+
+.presAbout {
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+}
+
+.partnersBlock {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.partners {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin-bottom: 6rem;
+}
+
+.partnersRev {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  margin-bottom: 4rem;
+}
+
+.betwPartners {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  border-top: 3px solid #43a62a70;
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+/* CONTACT PAGE  */
+
+.contactPage {
+  display: grid;
+  grid-template-columns: 8fr 5fr;
+}
+
+.contactSent {
+  margin-bottom: 55vh;
+}
+
+
+/* FOOTER */
+
+.footer {
+  font-family: 'mainFont';
+  display: flex;
+  justify-content: space-around;
+}
+
+.orderSentFooter {
+  position: absolute; 
+  bottom: 0; 
+  left: 10%; 
+  right: 10%;
+}
+
+
+
+@media screen and (max-width: 900px) {
+
+  .mobileBlocks {
+    display: block;
+  }
+
+  .computerBlocks {
+    display: none;
+  }
+
+  .navBarSets {
+    margin: 0;
+    /* width: 100%; */
+  }
+
+  /* HOME */
+  .classicPages {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6.7rem;
+  }
+
+  .icons {
+    display: none;
+  }
+
+  .presentation {
+    flex-wrap: wrap;
+  }
+
+  /* OFFERS MENU  */
+  .offerBanner {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 480px;
+  }
+  .offerBannersBreak {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61)), url("./medias/break.jpg");
+  }
+
+  .offerBannersSug {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61)), url("./medias/sucree.jpg");
+  }
+
+  .offerBannersSugSalt {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61)), url("./medias/sucresale.jpg");
+  }
+
+  .offerBannerRegular {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61)), url("./medias/buffet3.jpg");
+  }
+
+  /* SINGLE PAGES OFFER  */
+
+  .singlePageSect{
+    grid-template-columns: 1fr;
+    margin-top: 9rem;
+  }
+
+  .regular {
+    grid-template-columns: 1fr;
+  }
+
+  /* A LA CARTE  */
+
+  .cateBlock {
+    width: 94vw;
+  }
+
+  .stateBar {
+    width: 95vw;
+
+  }
+
+  .configGrid {
+    display: grid;
+    margin-left: 0rem;
+    grid-template-columns: 1fr;
+    /* width: 60vw; */
+  }
+
+  .productGrid {
+    /* width: 80vw; */
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 4rem;
+  }
+
+  .menuGrid {
+    width: 95vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 4rem;
+  }
+
+
+  .cardContain {
+    height: auto;
+    }
+
+  .cardTempl {
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+
+  .quantityDiv {
+    grid-template-columns: 1fr;
+  }
+  
+  .quoteContainer {
+    padding: 1rem;
+    margin-top: 3rem;
+    border-radius: 10px;
+    background-color: #0a70b42a;
+    width: auto;
+    min-height: none;
+    max-height: none;
+    overflow-y: auto;
+    position: relative;
+  }
+
+  .quoteBlock {
+    margin-left: 0rem;
+  }
+
+  .prevNextBut {
+    width: 45vw;
+  }
+
+  
+
+
+
+  /* ABOUT PAGE  */
+
+  .presAbout {
+    grid-template-columns: 1fr;
+  }
+
+  .partnersBlock {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  .partners {
+  display: grid;
+  grid-template-columns: 1fr ;
+  margin-bottom: 4rem;
+}
+
+.partnersRev {
+  display: grid;
+  grid-template-columns: 1fr ;
+  margin-bottom: 4rem;
+}
+  .changeOrder {
+    order: -1;
+  }
+
+  .imgAbout {
+    padding-bottom: 2rem;
+  }
+
+  /* CONTACT PAGE  */
+
+  .contactPage {
+    grid-template-columns: 1fr;
+  }
+
+  .contactSent {
+    margin-bottom: 30vh;
+  }
+
+  /* FOOTER   */
+
+}
+
